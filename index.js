@@ -9,14 +9,18 @@ var image1 = document.querySelectorAll("img")[0];
 
 image1.setAttribute("src", randomImageSource);
 
+var randomNumber2 = Math.floor(Math.random() * 6) + 1; //1-6
 
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-var randomDiceImage2 = "dice" + randomNumber2 + ".png";
+var randomDiceImage = "dice" + randomNumber2 + ".png"; //dice1.png - dice6.png
 
-var randomImageSource2 =randomDiceImage2 ;
+var randomImageSource1 = randomDiceImage; //images/dice1.png - images/dice6.png
+
 var image2 = document.querySelectorAll("img")[1];
 
-image2.setAttribute("src", randomImageSource);
+image2.setAttribute("src", randomImageSource1);
+
+
+
 
 
 //If player 1 wins
